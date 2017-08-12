@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".navbar-toggler-icon").on("click",function(){$(this).toggleClass("active")}),$(".utility--sameheight").matchHeight(),$(".takeitfromthetop").on("click",function(){return $("html,body").animate({scrollTop:0},2e3),!1})});
