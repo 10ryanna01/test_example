@@ -1,0 +1,17 @@
+////////////////////////////////////
+/// start  text-banner
+/////////////////////////////////////
+
+.text--banner {
+	.jumbotron {
+		background: $theme--white;
+		border-bottom: 0;
+	}
+	.text-banner--title {
+		text-transform: capitalize;
+		border-bottom: 1.5px solid $theme--52ndshade-of-grey;
+	}
+	.text-banner--description {
+		text-transform: capitalize;
+	}
+}

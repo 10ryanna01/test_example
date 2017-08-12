@@ -1,0 +1,18 @@
+///////////////////////////////////
+// begin footer
+///////////////////////////////////
+
+.section--footer {
+	background: $theme--green--light; 
+	#top-link-block.affix-top {
+
+		/* allows it to "slide" up into view */
+		bottom: 0px; /* negative of the offset - height of link element */
+		left: 0px; /* padding from the left side of the window */
+	}
+	#top-link-block.affix { 
+		/* keeps it on the bottom once in view */
+		bottom: 0px; /* height of link element */
+		left: 0px; /* padding from the left side of the window */
+	}
+}

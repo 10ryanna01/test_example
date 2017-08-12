@@ -1,0 +1,38 @@
+// ===========================
+// start product show case thanks
+//==============================
+
+.product-showcase--thanks {
+	overflow: hidden;
+
+	.product-showcase--thanks--descripton {
+		background-color: $theme--50thshade-of-grey;
+		background: $theme--50thshade-of-grey;
+	}
+	.product-showcase--message {
+		border-radius: 0;
+	}
+	.product-showcase--images {
+		background: $theme--50thshade-of-grey;
+	}
+	.product-showcase--thanks--stats {
+		background-color: $theme--50thshade-of-grey;
+		background: $theme--50thshade-of-grey;
+	}
+	.product-showcase--thanks--descripton--text {
+		border: 1px solid $theme--green;
+		color: $theme--green;
+
+		@include media-breakpoint-down(md) {
+			padding: 1.0em !important;
+		}
+	}
+	.product-showcase--thanks--stats--text {
+		color: $theme--green;
+		font-weight: 700;
+		word-wrap: break-word;
+	}
+	.ih-item.square {
+		@include interaction-wraper;
+	}
+}

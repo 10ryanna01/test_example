@@ -1,0 +1,35 @@
+//==============================
+/////hero-banner
+//=============================
+.hero--banner {
+	overflow: hidden;
+
+	.hero--banner--text-controls {
+		color: $theme--white;
+	}
+	.hero--banner--text-controls--title {
+		@include top-centerer;
+	}
+	.hero--banner--text-controls--play {
+		@include centerer;
+	}
+	.hero--banner--text-controls--cta {
+		background: $theme--green;
+		@include bottom-centerer;
+		border-radius: 0;
+		cursor: pointer;
+
+		&:hover {
+			background: $theme--green--hover;
+		}
+		@include media-breakpoint-down(xs) {
+			top: 50%;
+			transform: translate(-50%, -50%);
+
+			.h3 {
+				font-size: $banner--cta--text;
+			}
+		}
+	}
+	// close hero banner
+}

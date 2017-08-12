@@ -1,0 +1,13 @@
+/// header Bem styles go here
+
+.header {
+	background: $theme--white;
+	overflow: hidden;
+
+	.header--logo {
+		@include centerer;
+	}
+	.header--logo--image {
+		width: 155px;
+	}
+}
