@@ -1,5 +1,9 @@
 node_modules
+<<<<<<< HEAD
  
+=======
+dist
+>>>>>>> origin/master
 .tmp
 bower_components
 test/bower_components
