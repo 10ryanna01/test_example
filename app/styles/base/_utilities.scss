@@ -1,0 +1,117 @@
+// ===================================
+
+//utilties
+
+// ===================================
+
+
+.width--full{
+width:100%;
+} 
+
+
+// accessible but hidden: for form labels ect #ifneeded
+.content--hidden {
+    position: absolute;
+    left: 0;
+    top: -500px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+ .border--radius--reset{
+  border-radius: 0;
+ }
+
+
+.utility--background--transparent{
+	background: $settransparent;
+
+}
+
+.utility--backgroundcolor--transparent{ 
+background-color: $settransparent;
+}
+
+.utility--center--block{
+	margin: 0 auto;
+}
+
+.padding--collapse{
+@include media-breakpoint-down(md) {
+ padding-left:0;
+padding-right:0;
+ }
+}
+
+
+
+.padding--md{
+@include media-breakpoint-only(md) {
+ padding-left:1.0em;
+padding-right:1.0em;
+ }
+}
+
+
+
+.utility--position--relative{
+position:relative;
+}
+
+
+.utility--position--absolute{
+position: absolute;
+ 
+}
+
+  .utility--sameheight {
+    height: auto !important;
+  } 
+
+// =================================== ==================
+//mixins and place holders...... when they are needed for skin/theming
+// ==========================================================
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@mixin left-centerer {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-5%, -50%);
+}
+
+@mixin bottom-centerer {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+@mixin top-centerer {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+@mixin interaction-wraper{
+
+    width: auto;
+  height: auto;
+  box-shadow:   none;
+  border:0;
+}
+
+
+
+

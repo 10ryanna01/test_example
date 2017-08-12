@@ -1,0 +1,55 @@
+.mobile--nav {
+	.mobile--nav-contents {
+		background: $theme--50thshade-of-grey;
+	}
+	.card {
+		border: 0;
+	}
+	.card-header {
+		border-top: 2px solid white;
+		background: $theme--50thshade-of-grey;
+	}
+	.mobile--nav-contents--search--input--graphic {
+		@include left-centerer;
+	}
+	.mobile--nav-contents--search--input {
+		background: $settransparent;
+		background-color: $settransparent;
+		padding: 0.8rem 0.75rem;
+		text-indent: 35px;
+	}
+	.mobile--nav-contents--search--input--submit {
+		background: $settransparent;
+		background-color: $settransparent;
+		border: 0;
+		// border: 1px solid red;
+	}
+	.mobile--nav-contents--search--input--submit--graphic {
+		color: $theme--green;
+		font-size: $inputgraphicsize;
+	}
+	.mobile--nav-contents--list--title-cat--link {
+		text-decoration: none;
+	}
+	.mobile--nav-contents--list--title-cat {
+		color: $theme--51stshade-of-grey;
+		//bind styles to css not to markup #betterMaintenance
+	}
+	//bind styles to css not to markup #betterMaintenance
+	.mobile--nav-contents--list--item {
+		border-top: 2px solid white;
+		background: $theme--50thshade-of-grey;
+		text-transform: capitalize;
+	}
+	//animate menu icon when clicked by adding a class to it via js
+	.navbar-toggler-icon.active {
+		// generate svg to base64 @ http: //b64.io/ 
+		background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwMCAxMDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48bWV0YWRhdGE+IFN2ZyBWZWN0b3IgSWNvbnMgOiBodHRwOi8vd3d3Lm9ubGluZXdlYmZvbnRzLmNvbS9pY29uIDwvbWV0YWRhdGE+PGc+PHBhdGggZD0iTTk2NC43LDE1Ny42TDYyMi4zLDUwMGwzNDIuNCwzNDIuNGwwLDBjMTUuNywxNS43LDI1LjMsMzcuMywyNS4zLDYxLjFjMCw0Ny43LTM4LjcsODYuNS04Ni41LDg2LjVjLTIzLjksMC00NS41LTkuNy02MS4xLTI1LjNsMCwwTDUwMCw2MjIuM0wxNTcuNiw5NjQuN2wwLDBDMTQyLDk4MC4zLDEyMC4zLDk5MCw5Ni41LDk5MEM0OC43LDk5MCwxMCw5NTEuMywxMCw5MDMuNWMwLTIzLjksOS43LTQ1LjUsMjUuMy02MS4xbDAsMEwzNzcuNyw1MDBMMzUuMywxNTcuNmwwLDBDMTkuNywxNDIsMTAsMTIwLjMsMTAsOTYuNUMxMCw0OC43LDQ4LjcsMTAsOTYuNSwxMGMyMy45LDAsNDUuNSw5LjcsNjEuMSwyNS4zbDAsMEw1MDAsMzc3LjdMODQyLjQsMzUuM2wwLDBDODU4LDE5LjcsODc5LjcsMTAsOTAzLjUsMTBjNDcuOCwwLDg2LjUsMzguNyw4Ni41LDg2LjVDOTkwLDEyMC4zLDk4MC4zLDE0Miw5NjQuNywxNTcuNkw5NjQuNywxNTcuNnoiLz48L2c+PC9zdmc+);
+		transform: rotate(180deg);
+	}
+	//animate when these are clicked/touched
+	.navbar-toggler-icon, .navbar-toggler-icon.active {
+		transition: all 300ms ease-in-out;
+	}
+	// close mobile nav
+}
